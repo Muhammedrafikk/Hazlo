@@ -1572,6 +1572,8 @@ button {
   padding: 100px 15px;
   align-items: center;
   border-radius: 15px;
+  border-bottom: 1px solid #767676;
+  border-left: 1px solid #767676;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
