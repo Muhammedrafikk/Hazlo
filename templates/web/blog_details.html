@@ -1,0 +1,65 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}Blog Details{% endblock %}
+
+{% block content %}
+
+<main> 
+  <section class="breadcrumb_section text-uppercase" style="background-image: url({% static "web/assets/images/breadcrumb/tea_powder.jpg" %});">
+    <div class="container">
+      <h1 class="page_title text-white wow fadeInUp" data-wow-delay=".1s">Blog Details</h1>
+      <ul class="breadcrumb_nav ul_li wow fadeInUp" data-wow-delay=".2s">
+        <li><a href="{% url "web:index" %}"><i class="fas fa-home"></i> Home</a></li>
+        <li>{{blog.title}}</li>
+      </ul>
+    </div>
+    <div class="breadcrumb_icon_wrap">
+      <div class="container">
+        <div class="breadcrumb_icon wow fadeInUp" data-wow-delay=".3s">
+          <img src="{% static "web/assets/images/feature/icon_01.png" %}" alt="icon_not_found">
+          <span class="bg_shape"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb_section - end
+  ================================================== -->
+
+  <!-- details_section - start
+  ================================================== -->
+  <section class="bg_wdith_1 details_section blog_details sec_ptb_120">
+    <div class="container bg_wdith">
+      <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
+        
+        <div class="col-lg-12 col-md-12">
+          <div class="about_content">
+            <div class="about_image1 wow fadeInRight" data-wow-delay=".1s">
+              <img class="custom-image" src="{{ blog.image.url }}" style="width: 600px;" alt="image_not_found">             
+            </div>
+            <br>
+            <div class="section_title text-uppercase">
+              <h2 class="small_title admin_smalls"> Blog Details</h2>
+              <h3 class="big_title wow fadeInUp" data-wow-delay=".1s">
+                {{blog.title}}
+              </h3>
+            </div>
+            <p class="wow fadeInUp" data-wow-delay=".2s">
+              {{blog.paraph}}
+            </p>
+            <ul class="about_info ul_li_block">
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                {{ blog.content|safe }}
+              </li>
+            </ul>    
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- details_section - end
+  ================================================== -->
+
+</main>
+ 
+{% endblock %}

@@ -1,0 +1,96 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  	<title>{% block title %}{% endblock %} | Hazlo</title>
+  	<link rel="shortcut icon" href="{% static "web/assets/images/logo/Hazlo_Logo_icon.png" %}">
+
+  	<!-- fraimwork - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/bootstrap.min.css" %}">
+
+  	<!-- icon font - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/fontawesome.css" %}">
+
+  	<!-- animation - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/animate.css" %}">
+
+  	<!-- carousel - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/slick.css" %}">
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/slick-theme.css" %}">
+
+  	<!-- popup - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/magnific-popup.css" %}">
+
+  	<!-- jquery-ui - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/jquery-ui.css" %}">
+
+  	<!-- custom - css include -->
+  	<link rel="stylesheet" type="text/css" href="{% static "web/assets/css/style.css" %}">
+
+  </head>
+
+
+  <body>
+
+    <!-- body_wrap - start -->
+    <div class="body_wrap">
+
+      <!-- backtotop - start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- backtotop - end -->
+
+    </div>
+
+{% include 'web/partials/header.html' %}
+
+{% block content %}
+{% endblock %}
+
+{% include 'web/partials/footer.html' %}
+
+    <!-- body_wrap - end -->
+
+    <!-- fraimwork - jquery include -->
+    <script src="{% static "web/assets/js/jquery.min.js" %}"></script>
+    <script src="{% static "web/assets/js/bootstrap.min.js" %}"></script>
+
+    <!-- animation - jquery include -->
+    <script src="{% static "web/assets/js/wow.min.js" %}"></script>
+
+    <!-- carousel - jquery include -->
+    <script src="{% static "web/assets/js/slick.min.js" %}"></script>
+
+    <!-- popup - jquery include -->
+    <script src="{% static "web/assets/js/magnific-popup.min.js" %}"></script>
+
+    <!-- isotope filter - jquery include -->
+    <script src="{% static "web/assets/js/isotope.pkgd.min.js" %}"></script>
+
+    <!-- google map - jquery include -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&amp;ver=2.1.6"></script>
+    
+    <script src="{% static "web/assets/js/gmaps.min.js" %}"></script>
+
+    <!-- jquery-ui - jquery include -->
+    <script src="web/assets/js/jquery-ui.js"></script>
+
+    <!-- off canvas sidebar - jquery include -->
+    <script src="web/assets/js/mCustomScrollbar.js"></script>
+
+    <!-- custom - jquery include -->
+    <script src="{% static "web/assets/js/main.js" %}"></script>
+
+  </body>
+</html>

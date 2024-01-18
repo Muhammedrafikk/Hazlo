@@ -1,0 +1,71 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<main>
+  <section class="breadcrumb_section text-uppercase" style="background-image: url({% static "web/assets/images/breadcrumb/tea_powder.jpg" %});">
+    <div class="container">
+      <h1 class="page_title text-white wow fadeInUp" data-wow-delay=".1s">About Me</h1>
+      <ul class="breadcrumb_nav ul_li wow fadeInUp" data-wow-delay=".2s">
+        <li><a href="{% url "web:index" %}"><i class="fas fa-home"></i> Home</a></li>
+        <li>About Me</li>
+      </ul>
+    </div>
+    <div class="breadcrumb_icon_wrap">
+      <div class="container">
+        <div class="breadcrumb_icon wow fadeInUp" data-wow-delay=".3s">
+          <img src="{% static "web/assets/images/feature/icon_01.png" %}" alt="icon_not_found">
+          <span class="bg_shape"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb_section - end
+  ================================================== -->
+
+  <!-- admin_section - start
+  ================================================== -->
+  <section class="admin_section sec_ptb_120">
+    <div class="container">
+      <div class="row justify-content-lg-between justify-content-md-between justify-content-sm-center">
+        <div class="col-lg-5 col-md-6 col-sm-8">
+          <div class="admin_image wow fadeInUp" data-wow-delay=".1s">
+            <img src="{% static "web/assets/images/about/img_03.jpg" %}" alt="image_not_foundss">
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-8">
+          <div class="admin_content">
+            <h2 class="admin_name text-uppercase wow fadeInUp" data-wow-delay=".2s">The Art of Tea at Hazlo</h2>
+            <p class="wow fadeInUp" data-wow-delay=".3s">
+              Hazlo as we bring you the essence of Indian tea-making. Rooted in tradition, our teas and tea powders are meticulously crafted, capturing the rich heritage of India in every sip.
+            </p>
+            <div class="admin_info_wrap wow fadeInUp" data-wow-delay=".3s">
+              <ul class="social_links social_icons ul_li">
+                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#!"><i class="fab fa-behance"></i></a></li>
+              </ul>
+              <ul class="info_list ul_li_block">
+                <li><strong>Personal Info:</strong> Founder & Co</li>
+                <li><strong>Experience:</strong> 12 Years of Experience</li>
+                <li><strong>Email:</strong> Israfilsupol836@Email.com</li>
+                <li><strong>Phone:</strong> 01869018907 - 01815065236</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+  </section>
+  <!-- admin_section - end
+  ================================================== -->
+</main>
+
+{% endblock %}

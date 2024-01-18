@@ -1,0 +1,85 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}Product Details{% endblock %}
+
+{% block content %}
+
+<main> 
+  <section class="breadcrumb_section text-uppercase" style="background-image: url({% static "web/assets/images/breadcrumb/tea_powder.jpg" %});">
+    <div class="container">
+      <h1 class="page_title text-white wow fadeInUp" data-wow-delay=".1s">Product Details</h1>
+      <ul class="breadcrumb_nav ul_li wow fadeInUp" data-wow-delay=".2s">
+        <li><a href="index_1.html"><i class="fas fa-home"></i> Home</a></li>
+        <li>{{product.title}}</li>
+      </ul>
+    </div>
+    <div class="breadcrumb_icon_wrap">
+      <div class="container">
+        <div class="breadcrumb_icon wow fadeInUp" data-wow-delay=".3s">
+          <img src="{% static "web/assets/images/feature/icon_01.png" %}" alt="icon_not_found">
+          <span class="bg_shape"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb_section - end
+  ================================================== -->
+
+  <!-- details_section - start
+  ================================================== -->
+  <section class="details_section blog_details sec_ptb_120 bg_default_gray">
+    <div class="container">
+      <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center">
+
+        <div class="col-lg-6 col-md-6 ">
+          <div class="details_image_wrap wow fadeInUp" data-wow-delay=".1s">
+            <div class="details_image_carousel">
+              {% for add in product.productimage_set.all %}
+              <div class="slider_item">
+                <img src="{{add.image.url}}" alt="image_not_found">
+              </div>
+             {% endfor %}
+            </div>
+
+            <div class="details_image_carousel_nav">
+              {% for add in product.productimage_set.all %}
+              <div class="slider_item">
+                <img src="{{add.image.url}}" alt="image_not_found">
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-lg-6 col-md-6">
+          <div class="about_content">
+            <div class="section_title text-uppercase">
+              <h2 class="small_title admin_smalls"> Product Details</h2>
+              <h3 class="big_title wow fadeInUp" data-wow-delay=".1s">
+                {{product.title}}
+              </h3>
+            </div>
+            <!-- <h5 class="wow fadeInUp" data-wow-delay=".2s">
+              ₹ {{product.price}}
+            </h5> -->
+            <p class="wow fadeInUp" data-wow-delay=".2s">
+              {{product.paraph}}
+            </p>
+            <ul class="about_info ul_li_block">
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                {{ product.content|safe }}
+              </li>
+            </ul>        
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </section>
+  <!-- details_section - end
+  ================================================== -->
+
+</main>
+ 
+{% endblock %}

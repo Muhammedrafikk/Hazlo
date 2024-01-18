@@ -1,0 +1,446 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+      <main>
+        <section class="slider_section slider_dark">
+          <div class="main_slider pb-0 wow fadeInUp" data-wow-delay=".1s">
+            
+            <div class="slider_item text-white" style="background-image: url({% static "web/assets/images/slider/Indian-black-tea.jpg" %});">   
+              <div class="container">
+                <div class="row justify-content-lg-start justify-content-md-center">
+                  <div class="col-lg-6 col-md-8">
+                    <h4 class="title_text text-white text-uppercase" data-animation="fadeInUp" data-delay=".2s">
+                      Authentic Tea Powder Crafted in India
+                    </h3>
+                    <p data-animation="fadeInUp" data-delay=".4s">
+                      Indulge in the rich heritage of Indian tea-making as our carefully selected tea leaves are expertly blended to perfection, creating an exquisite tea powder.
+                    </p>
+                    <ul class="btns_group ul_li" data-animation="fadeInUp" data-delay=".6s">
+                      <li><a class="btn btn_primary text-uppercase"  href="{% url "web:about" %}">About Me</a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+           
+          </div>
+         
+          <div class="slider_social_wrap">
+            <div class="container maxw_1560">
+              <div class="row align-items-center justify-content-lg-between">
+                
+                <div class="col-lg-6 col-md-8">
+                  <ul class="social_links social_text ul_li text-uppercase wow fadeInLeft">
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> facebook</a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> twitter</a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i> youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- slider_section - end
+        ================================================== -->
+
+        <!-- feature_primary_section - start
+        ================================================== -->
+        <section class="feature_primary_section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="feature_primary wow fadeInUp" data-wow-delay=".1s">
+                  <div class="item_icon">
+                    <span class="item_serial">1</span>
+                    <img src="{% static "web/assets/images/feature/icon_01.png" %}" alt="icon_not_found">
+                  </div>
+                  <h3 class="item_title text-uppercase">Ground to Perfection</h3>
+                  <p class="mb-0">
+                    Elevate your tea experience with our authentic Indian tea powders, meticulously crafted for a symphony of flavors. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="feature_primary wow fadeInUp" data-wow-delay=".2s">
+                  <div class="item_icon">
+                    <span class="item_serial">2</span>
+                    <img src="{% static "web/assets/images/feature/icon_02.png" %}" alt="icon_not_found">
+                  </div>
+                  <h3 class="item_title text-uppercase">Essence of Indian Tea Powders</h3>
+                  <p class="mb-0">
+                    Unveil the essence of tradition with our finely ground Indian tea powders, promising a harmonious blend of flavors. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="feature_primary wow fadeInUp" data-wow-delay=".3s">
+                  <div class="item_icon">
+                    <span class="item_serial">3</span>
+                    <img src="{% static "web/assets/images/feature/icon_03.png" %}" alt="icon_not_found">
+                  </div>
+                  <h3 class="item_title text-uppercase">Tea of Powdered Perfection</h3>
+                  <p class="mb-0">
+                    Discover the artistry of tea-making with our expertly ground Indian tea powders. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="feature_primary wow fadeInUp" data-wow-delay=".4s">
+                  <div class="item_icon">
+                    <span class="item_serial">4</span>
+                    <img src="{% static "web/assets/images/feature/icon_04.png" %}" alt="icon_not_found">
+                  </div>
+                  <h3 class="item_title text-uppercase">Crafted Essence: India's Finest Tea Powders </h3>
+                  <p class="mb-0">
+                    Immerse yourself in the essence of craftsmanship with our handcrafted Indian tea powders. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- feature_primary_section - end
+        ================================================== -->
+
+        <!-- about_section - start
+        ================================================== -->
+        <section class="about_section sec_ptb_120">
+          <div class="container">
+            <div class="row align-items-center justify-content-lg-between">
+              <div class="col-lg-6 col-md-6 order-last">
+                <div class="about_image1 wow fadeInRight" data-wow-delay=".1s">
+                  <img class="custom-images" src="{% static "web/assets/images/about/about-01.jpg" %}" alt="image_not_found">             
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="about_content">
+                  <div class="section_title text-uppercase">
+                    <h2 class="small_title"><i class="fas fa-coffee"></i> about us</h2>
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".1s">
+                      Crafting Excellence: Our Tea Powder Legacy
+                    </h3>
+                  </div>
+                  
+                  <ul class="about_info ul_li_block">
+                    <li class="wow fadeInUp" data-wow-delay=".3s">
+                      <h4 class="text-uppercase"> Mastering Excellence: The Legacy of Our Crafted Tea Powders</h4>
+                      <p class="mb-0">
+                        Discover our legacy of crafting excellence in tea powders, where passion meets precision for an unparalleled tea experience.
+                      </p>
+                    </li>
+                    <li class="wow fadeInUp" data-wow-delay=".4s">
+                      <h4 class="text-uppercase">Unveiling the Artistry Behind Our Tea Powder Legacy</h4>
+                      <p class="mb-0">
+                        Embark on a journey from tradition to perfection with our artfully crafted tea powders, elevating every sip to a realm of extraordinary taste.
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="btns_group ul_li wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                      <a class="btn btn_primary text-uppercase" href="{% url "web:about" %}">About Us</a>
+                    </li>
+                    <li>
+                     
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about_section - end
+        ================================================== -->
+
+        <!-- recipe_menu_section - start
+        ================================================== -->
+        <section class="recipe_menu_section sec_ptb_120 bg_gray deco_wrap">
+          <div class="container">
+            <div class="section_title text-uppercase text-center">
+              <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> Our special Menu</h2>
+              <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+               Elevating Tea and Powder to Art
+              </h3>
+            </div>
+            <div class="recipe_item_grid grid wow fadeInUp" data-wow-delay=".4s">
+
+              <div class="element-item chocolate greantea " data-category="chocolate">
+                <div class="recipe_item">
+                  <div class="content_col">
+                    <a class="item_image" href="shop_details.html">
+                      <img src="{% static "web/assets/images/menu/tea-01.jpg" %}" alt="image_not_found">
+                    </a>
+                    <div class="item_content">
+                      <h3 class="item_title text-uppercase">
+                        <a href="shop_details.html">Pure Infusion Mastery</a>
+                      </h3>
+                      <p class="mb-0">
+                        Discover the harmony of nature and craftsmanship with our premium tea powders. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content_col">              
+                  </div>
+                </div>
+              </div>
+
+              <div class="element-item chocolate greantea " data-category="chocolate">
+                <div class="recipe_item">
+                  <div class="content_col">
+                    <a class="item_image" href="shop_details.html">
+                      <img src="{% static "web/assets/images/menu/tea-02.jpg" %}" alt="image_not_found">
+                    </a>
+                    <div class="item_content">
+                      <h3 class="item_title text-uppercase">
+                        <a href="shop_details.html">Powdered Elegance, Artisanal Excellence</a>
+                      </h3>
+                      <p class="mb-0">
+                        Experience the epitome of elegance with our artisanal tea powders. Meticulously sourced and ground.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content_col">              
+                  </div>
+                </div>
+              </div>
+
+              <div class="element-item chocolate greantea " data-category="chocolate">
+                <div class="recipe_item">
+                  <div class="content_col">
+                    <a class="item_image" href="shop_details.html">
+                      <img src="{% static "web/assets/images/menu/tea-03.jpg" %}" alt="image_not_found">
+                    </a>
+                    <div class="item_content">
+                      <h3 class="item_title text-uppercase">
+                        <a href="shop_details.html">Crafting Moments, One Powder at a Time</a>
+                      </h3>
+                      <p class="mb-0">
+                        Crafting moments of bliss with every powder, we invite you to explore the artistry of our tea collection.  
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content_col">              
+                  </div>
+                </div>
+              </div>
+
+              <div class="element-item chocolate greantea " data-category="chocolate">
+                <div class="recipe_item">
+                  <div class="content_col">
+                    <a class="item_image" href="shop_details.html">
+                      <img src="{% static "web/assets/images/menu/img_04.png" %}" alt="image_not_found">
+                    </a>
+                    <div class="item_content">
+                      <h3 class="item_title text-uppercase">
+                        <a href="shop_details.html">americano Super hot coffee</a>
+                      </h3>
+                      <p class="mb-0">
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="content_col">              
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="deco_item shape_1">
+            <img src="{% static "web/assets/images/menu/shape_01.png" %}" alt="image_not_found">
+          </div>
+          <div class="deco_item shape_2">
+            <img src="{% static "web/assets/images/menu/shape_02.png" %}" alt="image_not_found">
+          </div>
+        </section>
+        <!-- recipe_menu_section - end
+        ================================================== -->
+
+        <!-- offer_section - start
+        ================================================== -->
+        <section class="offer_section">
+          <div class="container p-5">
+            <div class="row g-0">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="offer_area">
+                  <div class="offer_image">
+                    <img src="{% static "web/assets/images/offer/img_0-9.jpg" %}" alt="image_not_found">
+                  </div>
+
+                </div>            
+              </div>
+
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="offer_area">
+                  <div class="offer_content">
+                    <div class="section_title text-uppercase">
+                      <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> what we offer</h2>
+                      <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                        Hazlo Elegance: Elevating Your Tea Experience
+                      </h3>
+                    </div>
+
+                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                      Welcome to Hazlo, where we redefine the art of tea. Our commitment to excellence shines through in every leaf, carefully selected and blended to perfection. Hazlo offers an exquisite range of tea powders that embody the elegance and richness of Indian tea culture. From classic blends to innovative infusions, our teas are a celebration of tradition, crafted with precision to deliver a sensory journey like no other.
+                    </p>
+                    <p class="mb-0 wow fadeInUp" data-wow-delay=".4s">
+                      Join us on a voyage of taste, as Hazlo invites you to indulge in the finest teas from India, where each cup tells a story of craftsmanship and sophistication.
+                    </p>
+                  </div>          
+                </div>            
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- offer_section - end
+        ================================================== -->
+
+        <!-- testimonial_section - start
+        ================================================== -->
+        <section class="testimonial_section sec_ptb_120 deco_wrap" style="background-image: url();">
+          <div class="container">
+            <div class="testimonial_slider wow fadeInUp" data-wow-delay=".2s">
+
+              <div class="testimonial_item_1 slider_item">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="item_image">
+                      <img src="{% static "web/assets/images/testimonial/img_01.png" %}" alt="image_not_found">
+                    
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="item_content">
+                      <div class="section_title text-uppercase">
+                        <h3 class="small_title"><i class="fas fa-coffee"></i> Client Testimonial</h3>
+                        <h4 class="big_title">
+                          Hazlo Heritage Blends: A Symphony of Indian Tea Excellence
+                        </h4>
+                      </div>
+                      <p>
+                        At Hazlo, we take pride in our heritage blends, meticulously curated to bring you the essence of India's tea culture. Each tea powder encapsulates the rich history and craftsmanship of our land. Indulge in the symphony of flavors, where tradition meets innovation, and elevate your tea moments with Hazlo's exceptional range. Immerse yourself in the heritage of tea-making, one exquisite cup at a time.
+                      </p>
+                      <div class="testimonial_admin text-uppercase">
+                        <h5 class="admin_name">rasalina De Willamson</h5>                      
+                        <span class="admin_title">business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </section>
+        <!-- testimonial_section - end
+        ================================================== -->
+
+        <!-- shop_section - start
+        ================================================== -->
+        <section class="shop_section sec_ptb_120 bg_gray">
+          <div class="container">
+            <div class="section_title text-uppercase">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-8">
+                  <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> special online shop</h2>
+                  <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                    Our popular product
+                  </h3>
+                </div>
+
+                <div class="col-lg-6 col-md-4">
+                  <div class="abtn_wrap text-lg-end text-md-end wow fadeInUp" data-wow-delay=".3s">
+                    <a class="btn btn_border border_black" href="{% url "web:product" %}">See all product</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              {% for product in products %}
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="shop_card wow fadeInUp" data-wow-delay=".1s">
+                  <a class="item_image" href="{{product.get_absolute_url}}">
+                    <img src="{{product.image.url}}" alt="image_not_found">
+                  </a>
+                  <div class="item_content">
+                    
+                    <div class="btns_group">
+                      <h3 class="item_title text-uppercase">
+                        <a href="{{product.get_absolute_url}}">{{product.title}}</a>
+                        
+                      </h3>
+                      
+                     <!-- <span class="item_price bg_default_brown">₹{{product.price}}</span> -->
+                    </div>
+                    <p style="font-size: 16px;">{{product.paraph|truncatechars:40}}</p>
+                    <a class="btn_text text-uppercase" href="{{product.get_absolute_url}}"><span>Read More</span> <i class="far fa-angle-double-right"></i></a>
+                    
+                  </div>
+
+                </div>
+              </div>
+			        {% endfor %}
+             
+
+            </div>
+          </div>
+        </section>
+        <!-- shop_section - end
+        ================================================== -->
+
+        <!-- blog_section - start
+        ================================================== -->
+        <section class="blog_section sec_ptb_120 bg_default_gray" style="background-image: url({% static "web/assets/images/backgrounds/bg_03.png" %});">
+          <div class="container">
+
+            <div class="section_title text-uppercase text-center">
+              <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> News & Blog</h2>
+              <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">Latest news & Blog</h3>
+            </div>
+            <div class="row justify-content-center">
+              {% for blog in blogs %}
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog_grid wow fadeInUp" data-wow-delay=".1s">
+                  <a class="item_image" href="{{blog.get_absolute_url}}">
+                    <img src="{{ blog.image.url }}" alt="image_not_found">
+                  </a>
+                  <div class="item_content">
+                    <h3 class="item_title text-uppercase">
+                      <a href="{{blog.get_absolute_url}}">{{blog.title}}</a>
+                    </h3>
+                    <p>
+                      {{blog.paraph|truncatechars:48}}
+                    </p>
+                    <a class="btn_text text-uppercase" href="{{blog.get_absolute_url}}"><span>Read More</span> <i class="far fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="load_more text-center wow fadeInUp" data-wow-delay=".1s">
+              <a class="btn btn_border border_black text-uppercase" href="{% url "web:blog" %}">See all Blog</a>
+            </div>
+
+          </div>
+        </section>
+        <!-- blog_section - end
+        ================================================== -->
+
+      </main>
+      <!-- main body - end
+      ================================================== -->
+
+
+{% endblock %}

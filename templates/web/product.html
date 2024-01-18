@@ -1,0 +1,71 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}Product{% endblock %}
+
+{% block content %}
+
+<main>
+	<section class="breadcrumb_section text-uppercase" style="background-image: url({% static "web/assets/images/breadcrumb/tea_powder.jpg" %});">
+		<div class="container">
+			<h1 class="page_title text-white wow fadeInUp" data-wow-delay=".1s">Online Product</h1>
+			<ul class="breadcrumb_nav ul_li wow fadeInUp" data-wow-delay=".2s">
+				<li><a href="{% url "web:index" %}"><i class="fas fa-home"></i> Home</a></li>
+				<li>Our Product</li>
+			</ul>
+		</div>
+		<div class="breadcrumb_icon_wrap">
+			<div class="container">
+				<div class="breadcrumb_icon wow fadeInUp" data-wow-delay=".3s">
+					<img src="{% static "web/assets/images/feature/icon_01.png" %}" alt="icon_not_found">
+					<span class="bg_shape"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+			<!-- shop_section - start
+	================================================== -->
+	<section class="shop_section sec_ptb_120 bg_default_gray">
+		<div class="container">
+
+		<!-- <ul class="filters-button-group ul_li_center wow fadeInUp" data-wow-delay=".1s">
+			<li><button class="button text-uppercase active" data-filter="*">all</button></li>
+		</ul> -->
+
+	
+
+		<div class="shop_filter_grid grid wow fadeInUp" data-wow-delay=".3s">
+			{% for product in products %}
+			<div class="element-item chocolate greantea " data-category="chocolate">
+				<div class="shop_card">	
+					<a class="item_image" href="{{product.get_absolute_url}}">
+						<img src="{{product.image.url}}" alt="image_not_found" >
+					</a>
+					<div class="item_content">
+						
+						<div class="btns_group">
+							<h3 class="item_title text-uppercase">
+								<a href="{{product.get_absolute_url}}">{{product.title}}</a>
+								
+							</h3>
+							
+							<!-- <span class="item_price bg_default_brown">₹{{product.price}}</span> -->
+						</div>
+						<p style="font-size: 16px;">{{product.paraph|truncatechars:40}}</p>
+						<a class="btn_text text-uppercase" href="{{product.get_absolute_url}}"><span>Read More</span> <i class="far fa-angle-double-right"></i></a>
+						
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			
+		</div>
+		</div>
+	</section>
+	<!-- shop_section - end
+	================================================== -->
+
+</main>
+
+{% endblock %}
